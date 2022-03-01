@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="br.com.ia.TelaInfo">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="12" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="979" height="571"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="8af79" class="javax.swing.JLabel" binding="labelVoador">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="3686c"/>
+          <text value="É voador?"/>
+        </properties>
+      </component>
+      <component id="3686c" class="javax.swing.JComboBox" binding="comboVoador">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="6b161" class="javax.swing.JLabel" binding="Titulo">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="8" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="20" style="1"/>
+          <text value="Informe as características do animal."/>
+        </properties>
+      </component>
+      <component id="393ac" class="javax.swing.JLabel" binding="labelLeite">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="ae543"/>
+          <text value="Produz leite?"/>
+        </properties>
+      </component>
+      <component id="ae543" class="javax.swing.JComboBox" binding="comboLeite">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="61b9b" class="javax.swing.JLabel" binding="labelOvos">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="a51a7"/>
+          <text value="Bota ovos?"/>
+        </properties>
+      </component>
+      <component id="a51a7" class="javax.swing.JComboBox" binding="comboOvos">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="78644" class="javax.swing.JLabel" binding="labelPenas">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="62b3e"/>
+          <text value="Possui penas?"/>
+        </properties>
+      </component>
+      <component id="62b3e" class="javax.swing.JComboBox" binding="comboPenas">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="139eb" class="javax.swing.JLabel" binding="labelPelo">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="f8efc"/>
+          <text value="Possui pelo?"/>
+        </properties>
+      </component>
+      <component id="f8efc" class="javax.swing.JComboBox" binding="comboPelo">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <hspacer id="d5e68">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="-1"/>
+            <preferred-size width="20" height="-1"/>
+            <maximum-size width="20" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="eb303">
+        <constraints>
+          <grid row="3" column="9" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="-1"/>
+            <preferred-size width="20" height="-1"/>
+            <maximum-size width="20" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <vspacer id="d8cf4">
+        <constraints>
+          <grid row="11" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <preferred-size width="-1" height="20"/>
+            <maximum-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="ca210">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="10"/>
+            <preferred-size width="-1" height="10"/>
+            <maximum-size width="-1" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="fc68e">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <preferred-size width="-1" height="20"/>
+            <maximum-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="b7fa7">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="-1"/>
+            <preferred-size width="20" height="-1"/>
+            <maximum-size width="20" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="3fd4a">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="-1"/>
+            <preferred-size width="20" height="-1"/>
+            <maximum-size width="20" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="cf4e" class="javax.swing.JButton" binding="confirmarButton" default-binding="true">
+        <constraints>
+          <grid row="10" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <text value="Confirmar"/>
+        </properties>
+      </component>
+      <vspacer id="4334d">
+        <constraints>
+          <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <preferred-size width="-1" height="20"/>
+            <maximum-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="9bdf4" class="javax.swing.JLabel" binding="labelAquatico">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="f83f5"/>
+          <text value="É aquático?"/>
+        </properties>
+      </component>
+      <component id="f83f5" class="javax.swing.JComboBox" binding="comboAquatico">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="16a0e" class="javax.swing.JLabel" binding="labelPredador">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="fdbb5"/>
+          <text value="É um predador?"/>
+        </properties>
+      </component>
+      <component id="fdbb5" class="javax.swing.JComboBox" binding="comboPredador">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="ce6bc" class="javax.swing.JLabel" binding="labelDentes">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="10c37"/>
+          <text value="Possui dentes?"/>
+        </properties>
+      </component>
+      <component id="10c37" class="javax.swing.JComboBox" binding="comboDentes">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="d547a" class="javax.swing.JLabel" binding="labelVertebra">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="2f0c8"/>
+          <text value="Possui coluna vertebral?"/>
+        </properties>
+      </component>
+      <component id="2f0c8" class="javax.swing.JComboBox" binding="comboVertebra">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="cb06f" class="javax.swing.JLabel" binding="labelAr">
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="ce5eb"/>
+          <text value="Respira ar?"/>
+        </properties>
+      </component>
+      <component id="ce5eb" class="javax.swing.JComboBox" binding="comboAr">
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="b4457" class="javax.swing.JComboBox" binding="comboVenenoso">
+        <constraints>
+          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="254b2" class="javax.swing.JLabel" binding="labelVeneno">
+        <constraints>
+          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="b4457"/>
+          <text value="É venenoso?"/>
+        </properties>
+      </component>
+      <component id="9c028" class="javax.swing.JLabel" binding="labelBarbatanas">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="d018f"/>
+          <text value="Possui barbatanas?"/>
+        </properties>
+      </component>
+      <component id="d018f" class="javax.swing.JComboBox" binding="comboBarbatanas">
+        <constraints>
+          <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="2bbf3" class="javax.swing.JLabel" binding="labelPernas">
+        <constraints>
+          <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="e8d6e"/>
+          <text value="Quantas pernas possui?"/>
+        </properties>
+      </component>
+      <component id="e8d6e" class="javax.swing.JComboBox" binding="comboPernas">
+        <constraints>
+          <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="2"/>
+            <item value="4"/>
+            <item value="6"/>
+            <item value="8"/>
+            <item value="10"/>
+            <item value="12"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a1410" class="javax.swing.JLabel" binding="labelRabo">
+        <constraints>
+          <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="dcbdd"/>
+          <text value="Possui rabo?"/>
+        </properties>
+      </component>
+      <component id="dcbdd" class="javax.swing.JComboBox" binding="comboRabo">
+        <constraints>
+          <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a4a2d" class="javax.swing.JLabel" binding="labelDomestico">
+        <constraints>
+          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="7ce46"/>
+          <text value="É doméstico?"/>
+        </properties>
+      </component>
+      <component id="7ce46" class="javax.swing.JComboBox" binding="comboDomestico">
+        <constraints>
+          <grid row="5" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+      <component id="94312" class="javax.swing.JLabel" binding="labelAgil">
+        <constraints>
+          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <labelFor value="87948"/>
+          <text value="É ágil?"/>
+        </properties>
+      </component>
+      <component id="87948" class="javax.swing.JComboBox" binding="comboAgil">
+        <constraints>
+          <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="16" style="0"/>
+          <model>
+            <item value="Sim"/>
+            <item value="Não"/>
+          </model>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
