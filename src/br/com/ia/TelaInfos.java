@@ -58,9 +58,9 @@ public class TelaInfos {
                     Object[] opcoes = {"Sim", "Não"};
                     JFrame telaResutados = new JFrame();
                     telaResutados.setContentPane(new TelaResultados().getTelaResultados());
-                    telaResutados.setSize(450, 250);
+                    telaResutados.setSize(2000, 1120);
                     telaResutados.setResizable(true);
-                    telaResutados.setLocation(900, 500);
+                    telaResutados.setLocation(250, 150);
                     telaResutados.setTitle("Resultado da classificação");
                     telaResutados.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
                     telaResutados.setVisible(true);
