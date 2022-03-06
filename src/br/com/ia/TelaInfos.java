@@ -64,9 +64,9 @@ public class TelaInfos {
 
                     JFrame telaResutados = new JFrame();
                     telaResutados.setContentPane(new TelaResultados().getTelaResultados());
-                    telaResutados.setSize((int)(0.6 * larguraDaTela), (int)(0.7 * alturaDaTela));
+                    telaResutados.setSize((int)(0.4 * larguraDaTela), (int)(0.8 * alturaDaTela));
                     telaResutados.setResizable(true);
-                    telaResutados.setLocation((int)(0.1*larguraDaTela), (int)(0.1*alturaDaTela));
+                    telaResutados.setLocation((int)(0.3 * larguraDaTela), (int)(0.1 * alturaDaTela));
                     telaResutados.setTitle("Resultado da classificação");
                     telaResutados.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
                     telaResutados.setVisible(true);
