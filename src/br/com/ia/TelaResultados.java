@@ -22,6 +22,8 @@ public class TelaResultados {
     public TelaResultados() throws Exception {
         Resultados resultados = new Resultados();
 
+        ajustarTamanhoDaFonte();
+
         labelClassificacao.setForeground(new Color(30, 210, 20));
         labelClassificacao.setText(resultados.getResultados());
 
@@ -45,5 +47,22 @@ public class TelaResultados {
                 }
             }
         });
+    }
+
+    private void ajustarTamanhoDaFonte() {
+        Dimension tamanhoDaTela = Toolkit.getDefaultToolkit().getScreenSize();
+        double larguraDaTela = tamanhoDaTela.getWidth();
+        double alturaDaTela = tamanhoDaTela.getHeight();
+
+        if (larguraDaTela < 2560 && alturaDaTela < 1440) {
+            Font font = new Font("Arial", Font.BOLD, 16);
+            labelResultado.setFont(font);
+            labelClassificacao.setFont(font);
+            labelAvaliacao.setFont(font);
+            labelConfusao.setFont(font);
+            tpAvaliacao.setFont(font);
+            tpConfusao.setFont(font);
+            exibirButton.setFont(font);
+        }
     }
 }

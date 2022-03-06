@@ -1,6 +1,7 @@
 package br.com.ia;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
@@ -56,11 +57,16 @@ public class TelaInfos {
                     confirmarParam();
                     // Chamar a tela de resultados
                     Object[] opcoes = {"Sim", "Não"};
+
+                    Dimension tamanhoDaTela = Toolkit.getDefaultToolkit().getScreenSize();
+                    double larguraDaTela = tamanhoDaTela.getWidth();
+                    double alturaDaTela = tamanhoDaTela.getHeight();
+
                     JFrame telaResutados = new JFrame();
                     telaResutados.setContentPane(new TelaResultados().getTelaResultados());
-                    telaResutados.setSize(2000, 1120);
+                    telaResutados.setSize((int)(0.6 * larguraDaTela), (int)(0.7 * alturaDaTela));
                     telaResutados.setResizable(true);
-                    telaResutados.setLocation(250, 150);
+                    telaResutados.setLocation((int)(0.1*larguraDaTela), (int)(0.1*alturaDaTela));
                     telaResutados.setTitle("Resultado da classificação");
                     telaResutados.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
                     telaResutados.setVisible(true);
