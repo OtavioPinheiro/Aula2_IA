@@ -9,7 +9,7 @@ public class Principal {
         displayTelaInfos();
     }
 
-    public static void displayTelaInfos() {
+    public static void displayTelaInfos() throws Exception {
         Object[] opcoes = {"Sim", "Não"};
         JFrame tela = new JFrame();
         tela.setContentPane(new TelaInfos().getTelaInfos());
@@ -17,7 +17,7 @@ public class Principal {
         tela.setResizable(true);
         tela.setLocation(900, 500);
         tela.setTitle("Classificação de animais");
-        tela.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+        tela.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         tela.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -42,6 +42,14 @@ public class Principal {
                 }
             }
         });
+
+        tela.addWindowFocusListener(new WindowAdapter() {
+            @Override
+            public void windowLostFocus(WindowEvent e) {
+                tela.dispose();
+            }
+        });
+
         tela.setVisible(true);
     }
 }

@@ -19,8 +19,8 @@ public class TelaResultados {
         return telaResultados;
     }
 
-    public TelaResultados() throws Exception {
-        Resultados resultados = new Resultados();
+    public TelaResultados(Infos infos) throws Exception {
+        Resultados resultados = new Resultados(infos);
 
         ajustarTamanhoDaFonte();
 

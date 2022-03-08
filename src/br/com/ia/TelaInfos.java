@@ -6,6 +6,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.Arrays;
 import java.util.Objects;
 
 public class TelaInfos {
@@ -49,12 +50,17 @@ public class TelaInfos {
         return telaInfos;
     }
 
-    public TelaInfos() {
+    Infos infos;
+
+    public TelaInfos() throws Exception {
+        infos = new Infos();
+
         confirmarButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 try {
                     confirmarParam();
+
                     // Chamar a tela de resultados
                     Object[] opcoes = {"Sim", "Não"};
 
@@ -63,7 +69,7 @@ public class TelaInfos {
                     double alturaDaTela = tamanhoDaTela.getHeight();
 
                     JFrame telaResutados = new JFrame();
-                    telaResutados.setContentPane(new TelaResultados().getTelaResultados());
+                    telaResutados.setContentPane(new TelaResultados(infos).getTelaResultados());
                     telaResutados.setSize((int)(0.4 * larguraDaTela), (int)(0.8 * alturaDaTela));
                     telaResutados.setResizable(true);
                     telaResutados.setLocation((int)(0.3 * larguraDaTela), (int)(0.1 * alturaDaTela));
@@ -84,7 +90,11 @@ public class TelaInfos {
                                     opcoes[0]
                             );
                             if (respostaJanela == 0) {
-                                Principal.displayTelaInfos();
+                                try {
+                                    Principal.displayTelaInfos();
+                                } catch (Exception ex) {
+                                    ex.printStackTrace();
+                                }
                             }
                             else {
                                 JOptionPane.showMessageDialog(
@@ -105,56 +115,54 @@ public class TelaInfos {
     }
 
     private void confirmarParam() throws Exception {
-        //Instanciar a classe de informações
-        Infos infos = new Infos();
-        Double[] infosAnimal = new Double[16];
+        double[] infosAnimal = new double[16];
 
         String pelo = Objects.requireNonNull(comboPelo.getSelectedItem()).toString();
-        Double paramPelo = converterResultado(pelo);
+        double paramPelo = converterResultado(pelo);
         infosAnimal[0] = paramPelo;
 
         String penas = Objects.requireNonNull(comboPenas.getSelectedItem()).toString();
-        Double paramPenas = converterResultado(penas);
+        double paramPenas = converterResultado(penas);
         infosAnimal[1] = paramPenas;
 
         String ovos = Objects.requireNonNull(comboOvos.getSelectedItem()).toString();
-        Double paramOvos = converterResultado(ovos);
+        double paramOvos = converterResultado(ovos);
         infosAnimal[2] = paramOvos;
 
         String leite = Objects.requireNonNull(comboLeite.getSelectedItem()).toString();
-        Double paramLeite = converterResultado(leite);
+        double paramLeite = converterResultado(leite);
         infosAnimal[3] = paramLeite;
 
         String voador = Objects.requireNonNull(comboVoador.getSelectedItem()).toString();
-        Double paramVoador = converterResultado(voador);
+        double paramVoador = converterResultado(voador);
         infosAnimal[4] = paramVoador;
 
         String aquatico = Objects.requireNonNull(comboAquatico.getSelectedItem()).toString();
-        Double paramAquatico = converterResultado(aquatico);
+        double paramAquatico = converterResultado(aquatico);
         infosAnimal[5] = paramAquatico;
 
         String predador = Objects.requireNonNull(comboPredador.getSelectedItem()).toString();
-        Double paramPredador = converterResultado(predador);
+        double paramPredador = converterResultado(predador);
         infosAnimal[6] = paramPredador;
 
         String dentes = Objects.requireNonNull(comboDentes.getSelectedItem()).toString();
-        Double paramDentes = converterResultado(dentes);
+        double paramDentes = converterResultado(dentes);
         infosAnimal[7] = paramDentes;
 
         String vertebras = Objects.requireNonNull(comboVertebra.getSelectedItem()).toString();
-        Double paramVertebras = converterResultado(vertebras);
+        double paramVertebras = converterResultado(vertebras);
         infosAnimal[8] = paramVertebras;
 
         String ar = Objects.requireNonNull(comboAr.getSelectedItem()).toString();
-        Double paramAr = converterResultado(ar);
+        double paramAr = converterResultado(ar);
         infosAnimal[9] = paramAr;
 
         String venenoso = Objects.requireNonNull(comboVenenoso.getSelectedItem()).toString();
-        Double paramVenenoso = converterResultado(venenoso);
+        double paramVenenoso = converterResultado(venenoso);
         infosAnimal[10] = paramVenenoso;
 
         String barbatanas = Objects.requireNonNull(comboBarbatanas.getSelectedItem()).toString();
-        Double paramBarbatanas = converterResultado(barbatanas);
+        double paramBarbatanas = converterResultado(barbatanas);
         infosAnimal[11] = paramBarbatanas;
 
         String pernas = Objects.requireNonNull(comboPernas.getSelectedItem()).toString();
@@ -162,21 +170,21 @@ public class TelaInfos {
         infosAnimal[12] = paramPernas;
 
         String rabo = Objects.requireNonNull(comboRabo.getSelectedItem()).toString();
-        Double paramRabo = converterResultado(rabo);
+        double paramRabo = converterResultado(rabo);
         infosAnimal[13] = paramRabo;
 
         String domestico = Objects.requireNonNull(comboDomestico.getSelectedItem()).toString();
-        Double paramDomestico = converterResultado(domestico);
+        double paramDomestico = converterResultado(domestico);
         infosAnimal[14] = paramDomestico;
 
         String agil = Objects.requireNonNull(comboAgil.getSelectedItem()).toString();
-        Double paramAgil = converterResultado(agil);
+        double paramAgil = converterResultado(agil);
         infosAnimal[15] = paramAgil;
 
         infos.setInfos(infosAnimal);
     }
 
-    private Double converterResultado(String valor) {
+    private double converterResultado(String valor) {
         double resultado = 0.0;
         if (Objects.equals(valor, "Sim")) {
             resultado = 1.0;
