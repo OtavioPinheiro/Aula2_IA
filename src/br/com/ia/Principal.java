@@ -40,6 +40,13 @@ public class Principal {
                     );
                     System.exit(0);
                 }
+                else {
+                    try {
+                        displayTelaInfos();
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+                }
             }
         });
 
